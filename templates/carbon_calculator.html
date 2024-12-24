@@ -1,0 +1,79 @@
+{% block content %}
+    <style>
+        .form-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        .form-container h2, .form-container h3 {
+            color: #333;
+        }
+        .form-container p {
+            margin-bottom: 15px;
+        }
+        .form-container label {
+            font-weight: bold;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <div class="form-container">
+        <h2>Carbon Footprint Calculator</h2>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.name.label }}<br>
+                {{ form.name(size=32) }}
+            </p>
+            <p>
+                {{ form.city.label }}<br>
+                {{ form.city(size=32) }}
+            </p>
+            <h3>Transportation</h3>
+            <p>
+                {{ form.distance.label }}<br>
+                {{ form.distance(size=32) }}
+            </p>
+            <p>
+                {{ form.transport_mode.label }}<br>
+                {{ form.transport_mode() }}
+            </p>
+            <h3>Electricity</h3>
+            <p>
+                {{ form.prev_usage.label }}<br>
+                {{ form.prev_usage(size=32) }}
+            </p>
+            <p>
+                {{ form.curr_usage.label }}<br>
+                {{ form.curr_usage(size=32) }}
+            </p>
+            <h3>Waste</h3>
+            <p>
+                {{ form.dry_waste.label }}<br>
+                {{ form.dry_waste(size=32) }}
+            </p>
+            <p>
+                {{ form.wet_waste.label }}<br>
+                {{ form.wet_waste(size=32) }}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </div>
+{% endblock %}

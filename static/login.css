@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    margin: 10px 15px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 400px;
+    border: 20px solid rgb(215, 215, 215);
+    
+}
+
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }

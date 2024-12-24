@@ -1,0 +1,37 @@
+{% block content %}
+    <style>
+        .results-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        .results-container h2 {
+            color: #333;
+        }
+        .results-container p {
+            font-size: 18px;
+            color: #555;
+        }
+        .results-container a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .results-container a:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <div class="results-container">
+        <h2>Carbon Footprint Results</h2>
+        <p>Your total carbon emission is: {{ total_emission }} kg CO2</p>
+        <a href="{{ url_for('visualization') }}">View Visualization</a>
+        <a href="{{ url_for('leaderboard') }}">View Leaderboard</a>
+    </div>
+{% endblock %}

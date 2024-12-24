@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+          .btn-primary {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px   
+           2px;
+            cursor: pointer;
+            border: none;
+            border-radius:   
+           5px;
+          }
+    </style>
+</head>
+<body>
+
+    <h1>Home Page</h1>
+   
+    <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
+    
+    <a href="{{ url_for('register') }}" class="btn btn-primary">Register</a>
+</body>
+</html>

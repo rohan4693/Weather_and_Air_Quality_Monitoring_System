@@ -1,0 +1,39 @@
+{% block content %}
+    <style>
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        .leaderboard-table th, .leaderboard-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        .leaderboard-table th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+        }
+        .leaderboard-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .leaderboard-table tr:hover {
+            background-color: #ddd;
+        }
+        .leaderboard-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+    <div class="leaderboard-container">
+        <h2>Leaderboard</h2>
+        <div class="leaderboard-table">{{ tables|safe }}</div>
+    </div>
+{% endblock %}
