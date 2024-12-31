@@ -29,3 +29,4 @@
 ### Data Storage and Management
 - **SQLAlchemy**: Use SQLAlchemy for database management.
 - **Pandas**: Use Pandas for data manipulation and storage.
+Edited my part - Siri Vishwanath Hegde
