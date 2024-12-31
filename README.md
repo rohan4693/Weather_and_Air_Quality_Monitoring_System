@@ -30,7 +30,7 @@
 - **SQLAlchemy**: Use SQLAlchemy for database management.
 - **Pandas**: Use Pandas for data manipulation and storage.
 ### Team members 
-Rohan Singh
-Siri Vishwanath Hegde
-Dharshana SN
-Jangala Navya Sri
+- Rohan Singh
+- Siri Vishwanath Hegde
+- Dharshana SN
+- Jangala Navya Sri
