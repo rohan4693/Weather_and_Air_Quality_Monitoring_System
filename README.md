@@ -1,7 +1,5 @@
 # Weather-and-Air-quality-monitoring-system
-<<<<<<< HEAD
 
-=======
 ## Project Features
 
 ### Weather Monitoring
@@ -37,4 +35,3 @@
 - Siri Vishwanath Hegde
 - Dharshana SN
 - Jangala Navya Sri
->>>>>>> acdf605b61e006da44d969d1365612434d7a763f
